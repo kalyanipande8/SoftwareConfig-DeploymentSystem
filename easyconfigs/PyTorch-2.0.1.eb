@@ -1,0 +1,24 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'PyTorch'
+version = '2.0.1'
+
+homepage = 'https://pytorch.org/'
+description = """PyTorch is an open source machine learning framework with GPU acceleration via CUDA."""
+
+toolchain = {'name': 'foss', 'version': '2023a'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('Python', '3.11.3'),
+    ('numpy', '1.24.3'),
+    ('CUDA', '12.1.1'),
+    ('cuDNN', '8.9.2.26-CUDA-12.1.1'),
+    ('foss', '2023a'),
+]
+
+moduleclass = 'lib'

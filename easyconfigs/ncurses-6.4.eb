@@ -1,0 +1,20 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'ncurses'
+version = '6.4'
+
+homepage = 'https://www.gnu.org/software/ncurses/'
+description = """The Ncurses (new curses) library is a free software emulation of curses in System V Release 4.0."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+]
+
+moduleclass = 'lib'

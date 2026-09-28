@@ -1,0 +1,21 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'cuDNN'
+version = '8.9.2.26-CUDA-12.1.1'
+
+homepage = 'https://developer.nvidia.com/cudnn'
+description = """The NVIDIA CUDA Deep Neural Network library (cuDNN) is a GPU-accelerated library of primitives for deep neural networks."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+    ('CUDA', '12.1.1'),
+]
+
+moduleclass = 'numlib'

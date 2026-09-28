@@ -1,0 +1,22 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'Boost'
+version = '1.82.0'
+
+homepage = 'https://www.boost.org/'
+description = """Boost provides free peer-reviewed portable C++ source libraries."""
+
+toolchain = {'name': 'GCC', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCC', '12.3.0'),
+    ('Python', '3.11.3'),
+    ('zlib', '1.2.13'),
+]
+
+moduleclass = 'devel'

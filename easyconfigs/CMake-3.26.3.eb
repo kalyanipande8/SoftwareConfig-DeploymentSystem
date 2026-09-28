@@ -1,0 +1,22 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'CMake'
+version = '3.26.3'
+
+homepage = 'https://www.cmake.org/'
+description = """CMake, the cross-platform, open-source build system."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+    ('ncurses', '6.4'),
+    ('OpenSSL', '1.1.1t'),
+]
+
+moduleclass = 'devel'

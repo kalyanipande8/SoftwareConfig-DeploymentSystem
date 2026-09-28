@@ -1,0 +1,23 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'SAMtools'
+version = '1.17'
+
+homepage = 'https://www.htslib.org/'
+description = """SAM Tools provide various utilities for manipulating alignments in the SAM/BAM/CRAM format."""
+
+toolchain = {'name': 'GCC', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCC', '12.3.0'),
+    ('ncurses', '6.4'),
+    ('bzip2', '1.0.8'),
+    ('zlib', '1.2.13'),
+]
+
+moduleclass = 'bio'

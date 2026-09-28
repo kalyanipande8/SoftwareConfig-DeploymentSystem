@@ -1,0 +1,26 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'Python'
+version = '3.11.3'
+
+homepage = 'https://python.org/'
+description = """Python is a programming language that lets you work quickly and integrate systems more effectively."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+    ('zlib', '1.2.13'),
+    ('libffi', '3.4.4'),
+    ('bzip2', '1.0.8'),
+    ('SQLite', '3.42.0'),
+    ('OpenSSL', '1.1.1t'),
+    ('ncurses', '6.4'),
+]
+
+moduleclass = 'lang'

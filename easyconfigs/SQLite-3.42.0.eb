@@ -1,0 +1,20 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'SQLite'
+version = '3.42.0'
+
+homepage = 'https://www.sqlite.org/'
+description = """SQLite: SQL Database Engine in a C Library"""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+]
+
+moduleclass = 'devel'

@@ -1,0 +1,20 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'bzip2'
+version = '1.0.8'
+
+homepage = 'https://sourceware.org/bzip2/'
+description = """bzip2 is a freely available, patent free, high-quality data compressor."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+]
+
+moduleclass = 'tools'

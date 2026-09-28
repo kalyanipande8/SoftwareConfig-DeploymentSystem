@@ -1,0 +1,22 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'HDF5'
+version = '1.14.0'
+
+homepage = 'https://www.hdfgroup.org/solutions/hdf5/'
+description = """HDF5 is a data model, library, and file format for storing and managing data."""
+
+toolchain = {'name': 'gompi', 'version': '2023a'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCC', '12.3.0'),
+    ('OpenMPI', '4.1.5'),
+    ('zlib', '1.2.13'),
+]
+
+moduleclass = 'data'

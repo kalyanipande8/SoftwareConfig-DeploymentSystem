@@ -1,0 +1,23 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'GROMACS'
+version = '2023.2'
+
+homepage = 'https://www.gromacs.org/'
+description = """GROMACS is a versatile package for molecular dynamics simulation."""
+
+toolchain = {'name': 'foss', 'version': '2023a'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCC', '12.3.0'),
+    ('OpenMPI', '4.1.5'),
+    ('FFTW', '3.3.10'),
+    ('foss', '2023a'),
+]
+
+moduleclass = 'bio'

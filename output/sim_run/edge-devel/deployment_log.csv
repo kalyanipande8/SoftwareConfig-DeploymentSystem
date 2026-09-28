@@ -1,0 +1,29 @@
+order,package,status,install_path,modulefile,reason
+1,GCCcore/12.3.0,DEPLOYED,/opt/software/GCCcore/12.3.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/GCCcore-12.3.0.tcl,
+2,CUDA/12.1.1,SKIPPED,,,requires GPU/CUDA driver stack; not available on cluster 'edge-devel'
+3,OpenSSL/1.1.1t,DEPLOYED,/opt/software/OpenSSL/1.1.1t,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/OpenSSL-1.1.1t.tcl,
+4,SQLite/3.42.0,DEPLOYED,/opt/software/SQLite/3.42.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/SQLite-3.42.0.tcl,
+5,binutils/2.40,DEPLOYED,/opt/software/binutils/2.40,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/binutils-2.40.tcl,
+6,bzip2/1.0.8,DEPLOYED,/opt/software/bzip2/1.0.8,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/bzip2-1.0.8.tcl,
+7,libffi/3.4.4,DEPLOYED,/opt/software/libffi/3.4.4,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/libffi-3.4.4.tcl,
+8,ncurses/6.4,DEPLOYED,/opt/software/ncurses/6.4,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/ncurses-6.4.tcl,
+9,zlib/1.2.13,DEPLOYED,/opt/software/zlib/1.2.13,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/zlib-1.2.13.tcl,
+10,cuDNN/8.9.2.26-CUDA-12.1.1,SKIPPED,,,requires GPU/CUDA driver stack; not available on cluster 'edge-devel'
+11,GCC/12.3.0,DEPLOYED,/opt/software/GCC/12.3.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/GCC-12.3.0.tcl,
+12,CMake/3.26.3,DEPLOYED,/opt/software/CMake/3.26.3,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/CMake-3.26.3.tcl,
+13,Python/3.11.3,DEPLOYED,/opt/software/Python/3.11.3,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/Python-3.11.3.tcl,
+14,OpenBLAS/0.3.23,DEPLOYED,/opt/software/OpenBLAS/0.3.23,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/OpenBLAS-0.3.23.tcl,
+15,OpenMPI/4.1.5,DEPLOYED,/opt/software/OpenMPI/4.1.5,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/OpenMPI-4.1.5.tcl,
+16,SAMtools/1.17,SKIPPED,,,moduleclass 'bio' has no source mirror configured on cluster 'edge-devel'
+17,Boost/1.82.0,DEPLOYED,/opt/software/Boost/1.82.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/Boost-1.82.0.tcl,
+18,BLAST+/2.14.0,SKIPPED,,,moduleclass 'bio' has no source mirror configured on cluster 'edge-devel'
+19,FFTW/3.3.10,DEPLOYED,/opt/software/FFTW/3.3.10,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/FFTW-3.3.10.tcl,
+20,HDF5/1.14.0,DEPLOYED,/opt/software/HDF5/1.14.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/HDF5-1.14.0.tcl,
+21,ScaLAPACK/2.2.0,DEPLOYED,/opt/software/ScaLAPACK/2.2.0,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/ScaLAPACK-2.2.0.tcl,
+22,foss/2023a,DEPLOYED,/opt/software/foss/2023a,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/foss-2023a.tcl,
+23,GROMACS/2023.2,SKIPPED,,,moduleclass 'bio' has no source mirror configured on cluster 'edge-devel'
+24,R/4.3.1,DEPLOYED,/opt/software/R/4.3.1,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/R-4.3.1.tcl,
+25,numpy/1.24.3,DEPLOYED,/opt/software/numpy/1.24.3,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/numpy-1.24.3.tcl,
+26,PyTorch/2.0.1,SKIPPED,,,requires GPU/CUDA driver stack; not available on cluster 'edge-devel'
+27,SciPy-bundle/2023.05,DEPLOYED,/opt/software/SciPy-bundle/2023.05,/Users/kalyanipande/My Drive/Career/projects/SoftwareConfig-DeploymentSystem/output/sim_run/edge-devel/modulefiles/SciPy-bundle-2023.05.tcl,
+28,TensorFlow/2.13.0,SKIPPED,,,requires GPU/CUDA driver stack; not available on cluster 'edge-devel'

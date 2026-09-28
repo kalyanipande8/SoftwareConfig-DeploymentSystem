@@ -1,0 +1,22 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'SciPy-bundle'
+version = '2023.05'
+
+homepage = 'https://www.scipy.org/'
+description = """Bundle of Python packages for scientific software including SciPy built on top of NumPy."""
+
+toolchain = {'name': 'foss', 'version': '2023a'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('Python', '3.11.3'),
+    ('numpy', '1.24.3'),
+    ('OpenBLAS', '0.3.23'),
+]
+
+moduleclass = 'lib'

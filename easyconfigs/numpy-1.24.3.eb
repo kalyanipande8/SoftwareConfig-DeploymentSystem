@@ -1,0 +1,22 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'numpy'
+version = '1.24.3'
+
+homepage = 'https://numpy.org/'
+description = """NumPy is the fundamental package for scientific computing with Python."""
+
+toolchain = {'name': 'foss', 'version': '2023a'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('Python', '3.11.3'),
+    ('OpenBLAS', '0.3.23'),
+    ('foss', '2023a'),
+]
+
+moduleclass = 'lib'

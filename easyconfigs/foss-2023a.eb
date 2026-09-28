@@ -1,0 +1,24 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'foss'
+version = '2023a'
+
+homepage = 'https://easybuild.readthedocs.io/en/latest/Common-toolchains.html'
+description = """GNU Compiler Collection (GCC) based compiler toolchain, including OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and ScaLAPACK."""
+
+toolchain = SYSTEM
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCC', '12.3.0'),
+    ('OpenMPI', '4.1.5'),
+    ('OpenBLAS', '0.3.23'),
+    ('FFTW', '3.3.10'),
+    ('ScaLAPACK', '2.2.0'),
+]
+
+moduleclass = 'toolchain'

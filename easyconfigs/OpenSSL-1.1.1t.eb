@@ -1,0 +1,20 @@
+# Easyconfig authored for the SoftwareConfig-DeploymentSystem portfolio project
+# Real, reviewable EasyBuild easyconfig syntax; not executed by a real `eb` install here.
+easyblock = 'ConfigureMake'
+
+name = 'OpenSSL'
+version = '1.1.1t'
+
+homepage = 'https://www.openssl.org/'
+description = """The OpenSSL Project is a collaborative effort to develop a robust, commercial-grade, full-featured toolkit for TLS and SSL protocols."""
+
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
+
+sources = ['%(name)s-%(version)s.tar.gz']
+source_urls = ['https://example-mirror.hpc/%(namelower)s/']
+
+dependencies = [
+    ('GCCcore', '12.3.0'),
+]
+
+moduleclass = 'lib'
